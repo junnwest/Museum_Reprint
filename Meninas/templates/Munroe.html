@@ -38,7 +38,7 @@
 <body>
 
   <!-- central, “inexhaustible” Mona Lisa -->
-  <img id="mona-base" src="marilyn_monrow.jpg" alt="Mona Lisa">
+  <img id="mona-base" src="{{ url_for('static', filename='marilyn_monrow.jpg') }}" alt="Mona Lisa">
 
   <script>
     gsap.registerPlugin(MotionPathPlugin);

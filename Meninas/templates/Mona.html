@@ -83,7 +83,7 @@
 <canvas id="canvas"></canvas>
 
 <script>
-  const imgSrc = "monalisa.jpg";
+  const imgSrc = "{{ url_for('static', filename='monalisa.jpg') }}";
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
 
