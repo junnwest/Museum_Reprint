@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Meninas - Following Eyes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="painting-container" id="paintingContainer">
+        <img src="{{ url_for('static', filename='LasMeninas.png') }}" 
+             alt="Las Meninas by Velázquez" id="painting">
+    </div>
+    <div class="eye-container" id="eye1middle">
+        <div class="eye">
+         <div class="pupil"></div>
+         <div class="eyelid"></div>
+        </div>
+    </div>
+    <div class="eye-container" id="eye2middle">
+        <div class="eye">
+         <div class="pupil"></div>
+         <div class="eyelid"></div>
+        </div>
+    </div>
+    <div class="eye-container" id="eye1painter">
+        <div class="eye">
+         <div class="pupil"></div>
+         <div class="eyelid"></div>
+        </div>
+    </div>
+    <div class="eye-container" id="eye2painter">
+        <div class="eye">
+         <div class="pupil"></div>
+         <div class="eyelid"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="video-wrapper">
+            <video id="videoElement" autoplay playsinline></video>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
